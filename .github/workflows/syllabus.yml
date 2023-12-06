@@ -16,3 +16,9 @@ jobs:
       with:
         input_path: syllabus
         output_dir: syllabus
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v3
+      with:
+        name: syllabus
+        path: syllabus/*.pdf
