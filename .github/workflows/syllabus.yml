@@ -1,0 +1,18 @@
+name: Write Syllabus to PDF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Markdown to PDF and HTML
+      uses: BaileyJM02/markdown-to-pdf@v1.2.0
+      with:
+        input: .syllabus/syllabus.md
+        output: .syllabus/syllabus.pdf
