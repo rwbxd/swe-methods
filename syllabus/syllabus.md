@@ -1,4 +1,4 @@
-### CSM 3060: Software Engineering Methods
+# CSM 3060: Software Engineering Methods
 
 ## Class Meetings:
 
