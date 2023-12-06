@@ -9,16 +9,16 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Markdown to PDF and HTML
       uses: BaileyJM02/markdown-to-pdf@v1.2.0
       with:
         input_path: syllabus
-        output_dir: syllabus
+        output_dir: syllabus/pdf
 
     - name: Upload PDF
       uses: actions/upload-artifact@v3
       with:
-        name: syllabus
-        path: syllabus/*.pdf
+        name: pdf
+        path: syllabus/pdf/
