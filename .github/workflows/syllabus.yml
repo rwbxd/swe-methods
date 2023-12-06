@@ -15,4 +15,4 @@ jobs:
       uses: BaileyJM02/markdown-to-pdf@v1.2.0
       with:
         input_path: .syllabus/
-        output: .syllabus/
+        output_dir: .syllabus/
