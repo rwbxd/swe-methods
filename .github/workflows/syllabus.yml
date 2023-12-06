@@ -14,5 +14,5 @@ jobs:
     - name: Markdown to PDF and HTML
       uses: BaileyJM02/markdown-to-pdf@v1.2.0
       with:
-        input_path: .syllabus/
-        output_dir: .syllabus/
+        input_path: syllabus
+        output_dir: syllabus
